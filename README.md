@@ -1,1 +1,10 @@
 # MapReduce-stuff
+In this assignment, we will use a data set did contains: 
+. 1 plot_summaries.txt: MovieID and movie plot in each line 
+. 2 movie.metadata.tsv: metadata aboutEach movie, like name, language, etc. 
+. 3 character.metadata.tsv: metadata about characters in each movie, like actor, gender, etc. 
+. 4 README.txt: contains a description of the files above files above. 
+. 4 stop.txt: common stop words in English: a, the, and, etc. There are 4 tasks. You have to solve them using MapReduce: 1: Count the total number of words in plot_summaries.txt. 2.1: Get the top 10 most frequently used words from plot_summaries.txt in descending order. 2.2: Get the top 10 most frequently used words ( excluding stopwords) from plot_summaries.txt in descending order. 3: Join movie.metadata.tsv and character.metadata.tsv to find actors / actresses in each movie. 4: Build an inverted index of the words for the movies in plot_summaries. txt.
+
+Your job is to implement the following. Please read the sections below for more details for separate MapReduce: . 1 Mapreduce job (s) to count the number of words in the total file plot_summaries.txt. The output file shoulderstand contain only one number:. The total number of words 2.1 MapReduce job (s) to place 10 most frequent words in the plot-summaries dataset. The words shoulderstand be ordered in descending order by Their number of occurrences in the dataset. 2.2 Do the same task of 2.1, but excluding Those stopwords in the stop.txt. . 3 Mapreduce job (s) to join the character.metadata.tsv and movie.metadata.tsv datasets and create a file, Which has the Following fields: i. Wikipedia Movie ID ii. Movie Name iii, iv, v, ... Actor Name (Possibly) multiple . 4 Mapreduce job (s) to create on inverted index for the plot-summaries dataset. The index shoulderstand be a mapping from the term to the Wikipedia movie ID and the number of occurrences. For example, if the term "assignment" the occurs 5 times in the plot summary of the movie Whose Wikipedia movie ID is 42, then the index shoulderstand contain a mapping from "assignment" to 42 and. 5
+
